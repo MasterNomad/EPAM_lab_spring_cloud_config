@@ -2,11 +2,3 @@ spring:
   profiles: default
 server:
   port: 8282  
-eureka:
-  instance:
-    hostname: eureka-service-registry
-  client:
-    registerWithEureka: false
-    fetchRegistry: false
-    serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/    
