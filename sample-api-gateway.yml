@@ -2,5 +2,8 @@ server.port: 9094
 
 zuul:
   routes:
-    workspaces-api: workspaces-service/workspaces/**
+    workspaces-api:
+    path: /workspaces-service/**
+     service-id: oldservice
+     strip-prefix: false
     employees-api: employees-service/employees/**
