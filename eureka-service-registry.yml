@@ -1,7 +1,6 @@
 server:
   port: 8282  
-spring:
-  profile: native
+
 eureka:
   client:
     registerWithEureka: false
