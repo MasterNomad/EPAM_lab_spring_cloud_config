@@ -1,4 +1,4 @@
-server.port: 8382  
+server.port: 8282  
     
 eureka:
   client:
