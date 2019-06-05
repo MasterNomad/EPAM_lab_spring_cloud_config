@@ -4,6 +4,6 @@ zuul:
   routes:
     workspaces-api:
     path: /workspaces-service/**
-     service-id: oldservice
+     service-id: workspaces
      strip-prefix: false
     employees-api: employees-service/employees/**
