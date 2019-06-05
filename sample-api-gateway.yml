@@ -1,8 +1,6 @@
 server.port: 9094
 
-spring:
-  cloud:
-    gateway:
-      routes:
-      - id: workspaces
-        uri: localhost:9090
+zuul:
+  routes:
+    workspaces-api: workspaces-service/workspaces/**
+    employees-api: employees-service/employees/**
