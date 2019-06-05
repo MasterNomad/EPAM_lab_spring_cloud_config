@@ -1,1 +1,10 @@
 server.port: 9094
+
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: workspaces
+        uri: workspaces-service/workspaces
+      - id: employees
+        uri: employees-service/employees
