@@ -5,6 +5,8 @@ spring:
     gateway:
       routes:
       - id: workspaces
-        uri: workspaces-service/workspaces
+        uri: localhost:9090
+      predicates:
+        - Path = workspaces-service/
       - id: employees
         uri: employees-service/employees
